@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-28T20:22:07 IST" name="Suite" finished-at="2024-02-28T20:24:53 IST" duration-ms="165103">
+    <groups>
+    </groups>
+    <test started-at="2024-02-28T20:22:07 IST" name="Test" finished-at="2024-02-28T20:24:53 IST" duration-ms="165103">
+      <class name="testNG.testCase.ValidBooking">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:21:51 IST" name="setup" finished-at="2024-02-28T20:22:07 IST" duration-ms="15954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkPage()[pri:1, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:22:08 IST" name="checkPage" finished-at="2024-02-28T20:22:09 IST" duration-ms="1237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPage -->
+        <test-method signature="enterFields()[pri:2, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:22:09 IST" name="enterFields" finished-at="2024-02-28T20:22:22 IST" depends-on-methods="testNG.testCase.Finding_Docs.checkPage" duration-ms="13040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFields -->
+        <test-method signature="applyFilters()[pri:3, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:22:22 IST" name="applyFilters" finished-at="2024-02-28T20:22:48 IST" depends-on-methods="testNG.testCase.Finding_Docs.enterFields" duration-ms="26537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyFilters -->
+        <test-method signature="displayDocs()[pri:4, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:22:48 IST" name="displayDocs" finished-at="2024-02-28T20:22:58 IST" depends-on-methods="testNG.testCase.Finding_Docs.applyFilters" duration-ms="9652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayDocs -->
+        <test-method signature="navToSurgery()[pri:5, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:22:58 IST" name="navToSurgery" finished-at="2024-02-28T20:23:00 IST" duration-ms="2311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navToSurgery -->
+        <test-method signature="scroll()[pri:6, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:23:00 IST" name="scroll" finished-at="2024-02-28T20:23:06 IST" depends-on-methods="testNG.testCase.GetSurgeries.navToSurgery" duration-ms="6106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scroll -->
+        <test-method signature="printSurgeries()[pri:7, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:23:07 IST" name="printSurgeries" finished-at="2024-02-28T20:23:11 IST" depends-on-methods="testNG.testCase.GetSurgeries.scroll" duration-ms="4430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printSurgeries -->
+        <test-method signature="navToHWP()[pri:8, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:23:11 IST" name="navToHWP" finished-at="2024-02-28T20:24:02 IST" duration-ms="51166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navToHWP -->
+        <test-method signature="enterFormDetails()[pri:9, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:24:02 IST" name="enterFormDetails" finished-at="2024-02-28T20:24:23 IST" depends-on-methods="testNG.testCase.InvalidBooking.navToHWP" duration-ms="21178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFormDetails -->
+        <test-method signature="userInHWP()[pri:10, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:24:23 IST" name="userInHWP" finished-at="2024-02-28T20:24:23 IST" depends-on-methods="testNG.testCase.InvalidBooking.enterFormDetails" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userInHWP -->
+        <test-method signature="validEmail()[pri:11, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:24:23 IST" name="validEmail" finished-at="2024-02-28T20:24:30 IST" depends-on-methods="testNG.testCase.ValidBooking.userInHWP" duration-ms="6312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmail -->
+        <test-method signature="book()[pri:12, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:24:30 IST" name="book" finished-at="2024-02-28T20:24:31 IST" depends-on-methods="testNG.testCase.ValidBooking.validEmail" duration-ms="1435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- book -->
+        <test-method signature="thankYou()[pri:13, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:24:31 IST" name="thankYou" finished-at="2024-02-28T20:24:53 IST" depends-on-methods="testNG.testCase.ValidBooking.book" duration-ms="21458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thankYou -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNG.testCase.ValidBooking@5656be13]" started-at="2024-02-28T20:24:53 IST" name="tearDown" finished-at="2024-02-28T20:24:54 IST" duration-ms="1181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNG.testCase.ValidBooking -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

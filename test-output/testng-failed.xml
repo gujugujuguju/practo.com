@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Edge(failed)">
+    <parameter name="browserName" value="Edge"/>
+    <classes>
+      <class name="testNG.testCase.ValidBooking">
+        <methods>
+          <include name="enterFormDetails"/>
+          <include name="printSurgeries"/>
+          <include name="scroll"/>
+          <include name="book"/>
+          <include name="navToHWP"/>
+          <include name="navToSurgery"/>
+          <include name="thankYou"/>
+          <include name="setup"/>
+          <include name="applyFilters"/>
+          <include name="displayDocs"/>
+          <include name="validEmail"/>
+          <include name="enterFields"/>
+          <include name="tearDown"/>
+          <include name="checkPage"/>
+          <include name="userInHWP"/>
+        </methods>
+      </class> <!-- testNG.testCase.ValidBooking -->
+    </classes>
+  </test> <!-- Edge(failed) -->
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browserName" value="Edge"/>
+    <classes>
+      <class name="testNG.testCase.ValidBooking">
+        <methods>
+          <include name="enterFormDetails"/>
+          <include name="printSurgeries"/>
+          <include name="scroll"/>
+          <include name="book"/>
+          <include name="navToHWP"/>
+          <include name="navToSurgery"/>
+          <include name="thankYou"/>
+          <include name="setup"/>
+          <include name="applyFilters"/>
+          <include name="displayDocs"/>
+          <include name="validEmail"/>
+          <include name="enterFields"/>
+          <include name="tearDown"/>
+          <include name="checkPage"/>
+          <include name="userInHWP"/>
+        </methods>
+      </class> <!-- testNG.testCase.ValidBooking -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
